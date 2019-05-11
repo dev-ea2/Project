@@ -27,11 +27,23 @@
 <canvas id="c9" height="120" width="120"></canvas>
 <br>
 </div>
-<button onclick="button()" id="NEW">NEW GAME</button> 
+<div id="button"><button class="optbutton" id="start">START</button>
+<button onclick="button()" class="optbutton">NEW GAME</button>
+<button onclick="darktheme()" ondblclick="lighttheme()">theme</button>
+</div> 
 <hr class="first">
 </section>
 </center>
-<script type="text/javascript" src="script.js">
+
+<script>
+function darktheme()
+{   
+document.body.style.backgroundColor= "#000";
+}
+function lighttheme()
+{
+	document.body.style.backgroundColor="rgba(121, 68, 154, 0.13)";
+}
 </script>
 </body>
 </html>
